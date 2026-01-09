@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #f0666a, #ffffff);
+    transition: background 0.5s;
+    flex-direction: column;
+}
+
+.game-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 50px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    max-width: 400px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff6f61;
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.scoreboard {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buttons button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.choice:hover {
+    transform: scale(1.2) rotate(5deg);
+    background-color: #ffecd2;
+}
+
+.results p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#message {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+#reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #6a82fb;
+    color: #fff;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#reset:hover {
+    background-color: #fc5c7d;
+}
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.top-right-logo {
+    position: absolute ;
+    top: 20px;      
+    right: 20px;  
+}
+
+.top-right-logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;    
+    object-fit: cover;       
+    border: 3px solid white; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    animation: rotate360 2.5s infinite;
+}
+.kll img{
+    width: 90px;
+    height: 90px;   
+    object-fit: cover;       
+    border: 3px solid white; 
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    animation: rotate360 2.5s infinite;
+}
+.kll {   
+    position: absolute;
+    top: 20px;
+    right: 130px;
+}
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
